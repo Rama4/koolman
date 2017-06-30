@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>High Scores</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+body{
+	 background: -webkit-linear-gradient(to left, #2C3E50 , #4CA1AF);
+    background: linear-gradient(to left, #2C3E50, #4CA1AF);
+}
+h1{
+	text-align:center;
+}
+	.thumbnail{
+		width:30%;
+		margin:0 auto;
+		color:#e0e0e0;
+		background:#2C3E50;
+		}
+	.row{
+		font-size:20px;
+		word-wrap: break-word;
+	margin-left:10px;
+	}/*
+	#l4{
+		margin:0 auto;
+	}*/
+	.lefta{
+		margin-left:100px;
+		/*width:97%;*/
+			
+	}
+	
+</style>
+
+</head>
+<body>
+<a href="/" class="btn btn-lg btn-success">Home</a>
+<h1>High Scores</h1>
+<div class="thumbnail" id="l">
+<h3>Total Score:</h3>
+<hr>	
+<div class="row">
+<%var l1 = arr.l;%>
+<%for(var i=0;i<Math.min(3,l1.length);i++){%>
+	<div class="row" style="width:400px;">
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].username%></span>
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].score%></span>
+	</div>	
+<% }%>
+</div>
+</div>
+<div class="row lefta">
+<div class="thumbnail col-md-4 <col-sm-></col-sm->4 col-xs-4" id="l1">
+<h3>Level 1:</h3><hr>
+<div class="row">
+<%var l1 = arr.l1;%>
+<%for(var i=0;i<Math.min(l1.length,3);i++){%>
+	<div class="row" style="width:400px;">
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].username%></span>
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].score%></span>
+	</div>	
+<% }%>
+</div>
+</div>
+<div class="thumbnail col-md-4 col-sm-4 col-xs-4" id="l2">
+<h3>Level 2:</h3><hr>
+<div class="row" style="width:400px;">
+<%var l1 = arr.l2;%>
+<%for(var i=0;i<Math.min(l1.length,3);i++){%>
+	<div class="row">
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].username%></span>
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].score%></span>
+	</div>	
+<% }%>
+</div>
+</div>
+<div class="thumbnail col-md-4 col-sm-4 col-xs-4" id="l3">
+<h3>Level 3:</h3><hr>
+<div class="row" style="width:400px;">
+<%var l1 = arr.l3;%>
+<%for(var i=0;i<Math.min(l1.length,3);i++){%>
+	<div class="row">
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].username%></span>
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].score%></span>
+	</div>	
+<% }%>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="thumbnail" id="l4">
+<h3>Level 4:</h3><hr>
+<div class="row" style="width:400px;">
+<%var l1 = arr.l4;%>
+<%for(var i=0;i<Math.min(l1.length,3);i++){%>
+	<div class="row">
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].username%></span>
+		<span class="col-md-6 col-sm-12 col-xs-12"><%=l1[i].score%></span>
+	</div>	
+<% }%>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
+

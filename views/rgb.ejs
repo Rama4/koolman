@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+        <title> color game </title>
+        <link rel="stylesheet" type="text/css" href="/styles/rgb.css">
+    </head>
+    <body>
+        <h1>The Awesome<br>
+        <span id="rgb">RGB</span><br> 
+        Game</h1>
+        
+        <div id="strip">
+            <button id="reset"><span id="message"></span></button>
+            <span id="result"></span>
+            <a href="/3" id="msg">Go To next Level</a>
+            <a href="/scores" id="quit">Quit</a>
+        </div> 
+        <span id="score"></span>
+        <div id="container">
+        <%for(var i=0;i<6;i++){%>
+            <div class="square"></div>
+        <% }%>
+        </div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/scripts/rgb.js"></script>
+    </body>
+</html>

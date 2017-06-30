@@ -1,0 +1,108 @@
+@font-face {
+   font-family: foo;  /*use any name you want*/
+   src: url('../AvenirLTStd-Book.otf');
+}
+
+body{
+    background-color:  #232323;
+/*        background: -webkit-linear-gradient(to left, #2C3E50 , #4CA1AF);
+    background: linear-gradient(to left, #2C3E50, #4CA1AF);
+*/    
+    color: white;
+    margin:0;
+    font-family: foo,sans-serif;
+}
+h1{
+    text-align: center;
+    background: steelblue;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    
+}
+#container{
+    margin: 20px auto;                        /*centering the container div*/
+    max-width: 600px;
+    
+    
+}
+.square{
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;                             /*for bringing squares side by side*/
+    margin:1.66%; 
+    border-radius: 15%;                      /*giving it smooth edges*/
+    transition: background 0.5s;             /*giving it a 'fade out' transition*/
+    -webkit-transition : background 0.5s;    /*browser compatibility for safari,etc*/
+    -moz-transition : background 0.5s;       /*browser compatibility for mozilla,etc*/
+}
+
+#strip
+{
+    background: white;
+    height:30px;
+    text-align: center;
+}
+.selected_difficulty{
+    color: white;
+    background: steelblue;
+    
+}
+#rgb{
+    font-size: 200%;
+    
+}
+#result{
+    display: inline-block;                /*allocates space for it , even if it isn't visible*/
+    width: 20%;
+    color: steelblue;
+    font-weight:700;
+    
+}
+
+#quit{
+    display: inline-block;              
+    width: 20%;
+    color: steelblue;
+    text-decoration: none;
+    font-weight:700;
+}
+#msg{
+    display: inline-block;              
+    width: 20%;
+    color: steelblue;
+    text-decoration: none;
+    font-weight:700;
+}
+
+#msg:hover , button:hover , #quit:hover{
+    color: white;
+    background:steelblue;
+}
+button{
+    border: none;
+    background: none;
+    
+    text-transform: uppercase;
+    height:100%;
+    font-weight: 700;
+    color:steelblue;
+    
+    letter-spacing: 1px; 
+    font-size: inherit; 
+    
+    transition: all 0.3s;
+    -webkit-transition : all 0.3s;    
+    -moz-transition : all 0.3s;
+    
+    outline:none ; /* this is for removing the unnecessary 
+        blue outline by browser when a button is clicked
+    */
+}
+#score{
+    position:fixed;
+    	top:50px;
+	right:10px;
+}
