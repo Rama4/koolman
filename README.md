@@ -1,7 +1,7 @@
 # Koolman
-A Game created as part of Daksh Web-Design contest conducted by SASTRA University, feb 2017 (Won 3rd place overall across all colleges in Tamil Nadu state!).
+A Game created as part of Daksh Web-Design contest conducted by SASTRA University on Feb 2017 (Won 3rd place overall across all colleges in Tamil Nadu state!).
 
-The main theme is memory recollection. The game has 3 mini games:
+The main theme is memory recollection. The game has 4 mini games:
   1. Recall the positions of colored circles that blink once on the screen. Scoring will be proportional to how close you click from the center of the circles.
   2. Guess the color denoted by RGB values, from a list of colors given below it. Fewer guesses will maximize the score.
   3. Pop the bubbles moving in a pre-determined path with different speeds at different points with as few clicks as possible to get maximum score.
